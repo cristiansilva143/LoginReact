@@ -1,0 +1,32 @@
+<html>
+  <head>
+      <script>
+      function validar() {
+        var usuario = document.getElementById('usuario').value;
+        var pass = document.getElementById("password").value;
+    
+          if (usuario == 'cristian' && pass== "1234")
+          {
+            alert("Usuario valido");
+          }
+          else{
+            alert("datos incorrectos");
+          }
+        }
+      </script>
+    <meta charSet = "utf-8">
+    <title>
+      PANTALLA DE ACCESO
+    </title>
+
+    </meta>
+      <body>
+        <form name="form" method="post">
+          Usuario: <input type="text" name="usuario" id="usuario"/><br/>
+          Contraseña: <input type="password" name="password" id="password"/><br/>
+          <input type="button" id="send" value="Acceder" onclick="validar();"> 
+      </body>
+
+  </head>
+
+</html>
